@@ -12,15 +12,13 @@
 <body>
     <h3 style="margin-left: 690px">2020语言排行榜</h3>
     <div id="rank" style="margin:0 auto;margin-left:350px;"></div>
-    <div id="main" style="width:800px;height:400px;margin:0 auto;margin-top: 50px;"></div>
+    <h3 style="margin-left: 350px;margin-top: 50px;">JavaScript语言排名变化</h3>
+    <div id="main" style="width:800px;height:400px;margin:0 auto;"></div>
     
 </body>
 <script>
      echarts.init(document.getElementById('main')).setOption({
         // 指定图表的配置项和数据
-        title: {
-            text: 'JavaScript语言排名变化'
-        },
         tooltip: {},
          xAxis: {
             data: ["2000","2005","2010","2015","2020"]
