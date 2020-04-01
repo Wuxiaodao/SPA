@@ -78,7 +78,7 @@ Carousel.prototype = {
         let wrapId = this.wrapId;          
         this.settimeID = setInterval(function() {
             document.getElementById(wrapId + "_next").click();
-        } , 3000);
+        } , 4000);
     },
     clearTime:function() {       
         let theId = this.settimeID;        
