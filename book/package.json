@@ -1,0 +1,23 @@
+{
+  "name": "wubook",
+  "version": "1.0.0",
+  "description": "这是一个自动化构建的gitbook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wuxiaodao/wubook.git"
+  },
+  "keywords": [],
+  "author": "Wuxiaodao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wuxiaodao/wubook/issues"
+  },
+  "homepage": "https://github.com/Wuxiaodao/wubook#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

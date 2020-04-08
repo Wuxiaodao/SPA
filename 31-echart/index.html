@@ -3,59 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>handsontable与Echarts</title>
-    <link href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" rel="stylesheet" media="screen">
-    <script src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
-    <script src="https://lib.baomitu.com/echarts/4.6.0/echarts.min.js"></script>
+    <title>二进熵函数曲线o</title>
+    <link rel="stylesheet" href="./layout.css">
 </head>
 <body>
-    <h3 style="margin-left: 690px">2020语言排行榜</h3>
-    <div id="rank" style="margin:0 auto;margin-left:350px;"></div>
-    <h3 style="margin-left: 350px;margin-top: 50px;">JavaScript语言排名变化</h3>
-    <div id="main" style="width:800px;height:400px;margin:0 auto;"></div>
-    
+    <div id="main"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+    <script src="//cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+    <script src="./main.js"></script>
 </body>
-<script>
-     echarts.init(document.getElementById('main')).setOption({
-        // 指定图表的配置项和数据
-        tooltip: {},
-         xAxis: {
-            data: ["2000","2005","2010","2015","2020"]
-        },
-        yAxis: {
-            data:[0,2,4,6,8,10]
-        },
-        yAxis:{},
-        series: [{
-            name: '排名',
-            type: 'line',
-            data: [6, 9, 8, 8, 7]
-        }]
-        
-    })
-
-        // 使用刚指定的配置项和数据显示图表。
-var table = [
-    {'语言名称':'Java','排名':'1','升或降':'降','变化幅度':'-0.01%'},
-    {'语言名称':'C','排名':'2','升或降':'升','变化幅度':'+2.44%'},
-    {'语言名称':'Python','排名':'3','升或降':'升','变化幅度':'+1.41%'},
-    {'语言名称':'C++','排名':'4','升或降':'降','变化幅度':'-2.58%'},
-    {'语言名称':'C#','排名':'5','升或降':'升','变化幅度':'+2.07%'},
-    {'语言名称':'Visual Basic.NET','排名':'6','升或降':'降','变化幅度':'-1.17%'},
-    {'语言名称':'JavaScript','排名':'7','升或降':'降','变化幅度':'-0.85%'}
-];
-new Handsontable(document.getElementById('rank'),{
-    autoColumnSize:true,
-    data:table,
-    colHeaders:true,
-    colHeaders:['语言名称','排名','升或降','变化幅度'],
-    colWidths:200,
-    className: "htCenter htMiddle", 
-
-})      
-        // 基于准备好的dom，初始化echarts实例
-   
-    </script>
-    
 </html>
